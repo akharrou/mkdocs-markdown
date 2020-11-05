@@ -268,7 +268,7 @@ markdown_extensions:
       generic: true
 
 
-  # add additional content to parts of the text which are then shown on hover; (https://squidfunk.github.io/mkdocs-material-insiders/reference/abbreviations/#snippets); (https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
+  # adds additional content to parts of the text which are then shown on hover,, but use `mkdocs-macros` plugin support for: `{% include 'file.md' %}` instead; (https://squidfunk.github.io/mkdocs-material-insiders/reference/abbreviations/#snippets); (https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
   # - pymdownx.snippets:
   #     base_path: '.'
   #     encoding: utf-8
@@ -407,6 +407,7 @@ plugins:
 
   # enables support for variables, macros (functions) and jinja templating wihtin markdown files; (https://squidfunk.github.io/mkdocs-material-insiders/reference/variables/); (https://github.com/fralau/mkdocs_macros_plugin); pip install mkdocs-macros-plugin
   - macros:
+      include_dir: includes/ # with regards to `{% include 'filename.ext' %}`; relative path for includes directive, by default the root directory for your included files is in docs_dir; (https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/#including-snippets-in-pages)
       module_name: includes/main # Name of the Python module, file or directory, without extension; you may specify a path (e.g. include/module)
       include_yaml: [ includes/vars.yml ]
       # include_dir: includes # doesn't work; ' Directory for including external files
@@ -423,6 +424,7 @@ plugins:
 
   # allows redirections
   - redirects:
+        use_directory_urls: true
         redirect_maps:
             # Examples:
             # 'old.md': 'new.md'
