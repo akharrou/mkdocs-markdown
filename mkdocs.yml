@@ -338,7 +338,6 @@ plugins:
 
   # (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-site-search/#built-in-search)
   - search:
-
       lang: en
 
       # separator for indexing and query tokenization can be customized, making it possible to index parts of words separated by other characters than whitespace and `-`
