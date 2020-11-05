@@ -437,8 +437,12 @@ plugins:
 
 
 
-# extra:
-
+extra:
+  price: 12.50
+  company:
+      name: Acme
+      address: ....
+      website: www.acme.com
 
 
 
@@ -457,7 +461,7 @@ nav:
       # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
       - 'MKDW ➤ Overview': Overview - mkdw,nts,ksa,2020-1101091656.md
       - 'MKDW ➤ Callouts': Callouts - mkdw,nts,ksa,2020-1031114253.md
-      - 'MKDW ➤ Data tables': Data tables - mkdw,nts,ksa,2020-1101095858.md
+      - 'MKDW ➤ Tables': Tables - mkdw,nts,ksa,2020-1101095858.md
       - 'MKDW ➤ Footnotes': Footnotes - mkdw,nts,ksa,2020-1101104435.md
       - 'MKDW ➤ Emojis and icons': Emojis and icons - mkdw,nts,ksa,2020-1101104824.md
       - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md

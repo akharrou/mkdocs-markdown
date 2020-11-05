@@ -1,4 +1,4 @@
-# MKDW ➤ Data tables
+# MKDW ➤ Tables
 
 ## Synopsis
 
