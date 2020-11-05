@@ -4,9 +4,9 @@
 
 Possible text formatting:
 
-- [[Emphasis - mkdw,nts,ksa,2020-1101131959|Emphasis (bold, italic)]]
-- [[Underline - mkdw,nts,ksa,2020-1101131945|Underline]]
-- [[Strike-through - mkdw,nts,ksa,2020-1101131644|Strike-through]]
+- [[Formatting - mkdw,nts,ksa,2020-1101125635|Emphasis (bold, italic)]]
+- [[Formatting - mkdw,nts,ksa,2020-1101125635|Underline]]
+- [[Formatting - mkdw,nts,ksa,2020-1101125635|Strike-through]]
 - [[Superscript and subscript - mkdw,nts,ksa,2020-1101104802|Superscript and subscript]]
 - [[Special characters - mkdw,nts,ksa,2020-1101131621|Special characters]]
 - [[Highlight marks - mkdw,nts,ksa,2020-1101115332|Highlighting]]
