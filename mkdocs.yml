@@ -2,7 +2,7 @@
 
 # website information
 site_name: 'Markdown Notebook'
-site_url:
+site_url: 'https://akharrou.github.io/mkdocs-markdown/'
 site_author: Aymen Kharroubi
 site_description: >-
   Documentation website to capture the state of my knowledge and understanding.
