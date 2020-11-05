@@ -47,7 +47,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
               price: 12.50
               company:
                   name: Acme
-                  address: ....
+                  address: acme@labs.com
                   website: www.acme.com
           ```
           ```

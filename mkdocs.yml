@@ -62,29 +62,6 @@ theme:
     repo: fontawesome/brands/github
 
 
-  # social links are rendered next to the copyright information as part of the footer (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-the-footer/#social-links)
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/akharrou
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/_akharrou
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/akharrou/
-
-    # - icon: fontawesome/brands/gitter
-    #   link: https://gitter.im/squidfunk/mkdocs-material
-    # - icon: fontawesome/brands/docker
-    #   link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    # - icon: fontawesome/brands/instagram
-    #   link: https://instagram.com/squidfunk
-    # - icon: fontawesome/brands/slack
-    #   link:
-    # - icon: fontawesome/brands/medium
-    #   link:
-    # - icon: fontawesome/brands/behance
-    #   link:
-
-
 # css, javascript, and website customizations/extensions/overrides; (https://squidfunk.github.io/mkdocs-material-insiders/customization/#additional-css)
 extra_css:
   - stylesheets/extra.css
@@ -436,6 +413,29 @@ plugins:
 
 
 extra:
+
+  # social links are rendered next to the copyright information as part of the footer (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-the-footer/#social-links)
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/akharrou
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/_akharrou
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/akharrou/
+
+    # - icon: fontawesome/brands/gitter
+    #   link: https://gitter.im/squidfunk/mkdocs-material
+    # - icon: fontawesome/brands/docker
+    #   link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    # - icon: fontawesome/brands/instagram
+    #   link: https://instagram.com/squidfunk
+    # - icon: fontawesome/brands/slack
+    #   link:
+    # - icon: fontawesome/brands/medium
+    #   link:
+    # - icon: fontawesome/brands/behance
+    #   link:
+
   price: 12.50
   company:
       name: Acme
