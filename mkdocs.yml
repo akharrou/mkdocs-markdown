@@ -424,7 +424,7 @@ plugins:
 
   # allows redirections; (https://github.com/datarobot/mkdocs-redirects)
   - redirects:
-        use_directory_urls: false
+        use_directory_urls: true
         redirect_maps:
             'Emphasis - mkdw,nts,ksa,2020-1101131959.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
             'Underline - mkdw,nts,ksa,2020-1101131945.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
