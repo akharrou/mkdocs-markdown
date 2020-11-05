@@ -4,7 +4,7 @@
 
 Images are supported with the `![alt](path)` syntax, and with third party plugins, wiki-link syntax `![[​img|alt]]` also becomes available.
 
-??? warning "Mkdocs Only Feature"
+??? warning "Mkdocs Configuration"
 
         With the [Attribute List](https://python-markdown.github.io/extensions/attr_list/) extension, you can add HTML attributes and CSS classes to markdown elements, such as images. You can use this to align images easily.
 
