@@ -436,7 +436,6 @@ plugins:
             # 'some_file.md': 'http://external.url.com/foobar'
 
 
-
 extra:
   price: 12.50
   company:
