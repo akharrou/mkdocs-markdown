@@ -431,9 +431,9 @@ plugins:
             # 'old/file.md': 'new/file.md'
             # 'some_file.md': 'http://external.url.com/foobar'
 
-            'Emphasis - mkdw,nts,ksa,2020-1101131959.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
-            'Underline - mkdw,nts,ksa,2020-1101131945.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
-            'Strike-through - mkdw,nts,ksa,2020-1101131644.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
+            'Emphasis - mkdw,nts,ksa,2020-1101131959.md': 'mkdocs-markdown/Formatting - mkdw,nts,ksa,2020-1101125635.md'
+            'Underline - mkdw,nts,ksa,2020-1101131945.md': 'mkdocs-markdown/Formatting - mkdw,nts,ksa,2020-1101125635.md'
+            'Strike-through - mkdw,nts,ksa,2020-1101131644.md': 'mkdocs-markdown/Formatting - mkdw,nts,ksa,2020-1101125635.md'
             # 'Critic-markup - mkdw,nts,ksa,2020-1101132021.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
 
 
