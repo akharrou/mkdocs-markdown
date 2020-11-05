@@ -1,0 +1,518 @@
+# -- >Website -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+# website information
+site_name: 'Markdown Notebook'
+site_url:
+site_author: Aymen Kharroubi
+site_description: >-
+  Documentation website to capture the state of my knowledge and understanding.
+
+# Adding a Git Repository; display information to the project's repository as part of the static site, including statistics like stars and forks (https://squidfunk.github.io/mkdocs-material-insiders/setup/adding-a-git-repository/#adding-a-git-repository)
+repo_name: 💎 Akharrou
+repo_url: https://github.com/akharrou/
+edit_uri: ""
+copyright: Copyright &copy; 2020 <a href="https://github.com/akharrou"  target="_blank" rel="noopener">💎 Akharrou</a>
+
+
+# specify what folder the docs lie; (https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml)
+docs_dir: "docs/"
+
+# website design customization
+theme:
+
+
+  name: material # https://github.com/squidfunk/mkdocs-material
+  custom_dir: overrides  # https://squidfunk.github.io/mkdocs-material-insiders/customization/
+
+  # supported languages; (https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml)
+  language: en
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false # must provide a 'search.html' in theme directory
+  search_index_only: true
+
+  features:
+
+    # top-level sections are rendered in a menu (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-navigation/#navigation-tabs)
+    # - navigation.tabs
+
+
+    # internal links will be intercepted and dispatched via XHR without fully reloading the page (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-navigation/#instant-loading)
+    - navigation.instant
+
+
+  # change the colors of the site; (https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
+  palette:
+    - scheme: default # OR `slate` (dark mode)
+      primary: black
+      accent: deep purple
+
+
+  # change the font of the site
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+
+  # change the favicon (tab icon), top left corner icon and top right logo icon, respectively
+  favicon: _assets/alfred.png
+  # logo: _assets/alfred.png
+  icon:
+    logo: material/apps
+    repo: fontawesome/brands/github
+
+
+  # social links are rendered next to the copyright information as part of the footer (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-the-footer/#social-links)
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/akharrou
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/_akharrou
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/akharrou/
+
+    # - icon: fontawesome/brands/gitter
+    #   link: https://gitter.im/squidfunk/mkdocs-material
+    # - icon: fontawesome/brands/docker
+    #   link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    # - icon: fontawesome/brands/instagram
+    #   link: https://instagram.com/squidfunk
+    # - icon: fontawesome/brands/slack
+    #   link:
+    # - icon: fontawesome/brands/medium
+    #   link:
+    # - icon: fontawesome/brands/behance
+    #   link:
+
+
+# css, javascript, and website customizations/extensions/overrides; (https://squidfunk.github.io/mkdocs-material-insiders/customization/#additional-css)
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+
+  # enable mathjax; (https://squidfunk.github.io/mkdocs-material-insiders/reference/mathjax/)
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+
+# -- >Markdown -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+# markdown language extensions
+markdown_extensions:
+
+  # customization of table of contents; (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-navigation/?h=+toc_depth#table-of-contents)
+  - toc: # markdown.extensions.toc:
+
+      # Define the range of levels to be included in the table of contents (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-navigation/#table-of-contents)
+      toc_depth: 6
+
+      # enables anchor link at the end of each headline (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-navigation/#table-of-contents)
+      permalink: ⚓︎
+
+       # [_cased]; allows for customization of the slug function (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-navigation/#table-of-contents)
+      slugify: !!python/name:pymdownx.slugs.uslugify
+
+
+  # allows to add HTML attributes and CSS classes to markdown elements  `<element>{: #someid .someclass somekey='some value' }; (https://squidfunk.github.io/mkdocs-material-insiders/reference/buttons/); (https://python-markdown.github.io/extensions/attr_list/)
+  - attr_list
+
+
+  # glossary, diplays alt-text of defined words on hover; (https://squidfunk.github.io/mkdocs-material-insiders/reference/abbreviations/#abbreviations_1), (https://python-markdown.github.io/extensions/abbreviations/)
+  - abbr
+
+
+  # enable support for markdown standard meta tags; (https://squidfunk.github.io/mkdocs-material-insiders/reference/meta-tags/), (https://python-markdown.github.io/extensions/abbreviations/)
+  - meta
+
+
+  # enable support for footnote; (https://squidfunk.github.io/mkdocs-material-insiders/reference/footnotes/)
+  - footnotes
+
+
+  # enable support for definition lists; (https://squidfunk.github.io/mkdocs-material-insiders/reference/lists/#definition-list); (https://python-markdown.github.io/extensions/definition_lists/)
+  - def_list
+
+
+  # enable support for callouts, also known as admonitions, to include content within a decorated box; (https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/#admonition); (https://python-markdown.github.io/extensions/admonition/)
+  - admonition
+
+
+  # enable support for collapsible callouts; (https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/#details); (https://facelessuser.github.io/pymdown-extensions/extensions/details/)
+  - pymdownx.details
+
+
+  # enables conversion of ASCII dashes, quotes and ellipses to their HTML entity equivalents; (https://python-markdown.github.io/extensions/smarty/)
+  - markdown.extensions.smarty:
+      smart_dashes: true # whether to convert dashes
+      smart_quotes: true # whether to convert straight quotes
+      smart_angled_quotes: true # whether to convert angled quotes
+      smart_ellipses: true # whether to convert ellipses
+      substitutions: {} # overwrite default substitutions
+
+
+  # disallows the mixing of list types, recognizes the starting number in an ordered list; (https://python-markdown.github.io/extensions/sane_lists/)
+  - markdown.extensions.sane_lists:
+
+
+  # enables newlines to be treated as hard breaks `<br>`; (https://python-markdown.github.io/extensions/nl2br/)
+  # - markdown.extensions.nl2br:
+
+
+  # enable support for task lists; (https://squidfunk.github.io/mkdocs-material-insiders/reference/lists/); (https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/)
+  - pymdownx.tasklist:
+      custom_checkbox: true # toggles the rendering style of checkboxes, replaces native checkbox styles
+      clickable_checkbox: true # toggles whether checkboxes are clickable
+
+
+  # adds syntax highlighting for code blocks & allows nesting of fence blocks under blockquotes, lists, or other block elements (admonitions); (https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/#superfences); (https://facelessuser.github.io/pymdown-extensions/extensions/superfences/)
+  - pymdownx.superfences:
+      disable_indented_code_blocks: true # Disables Python Markdown's indented code block parsing
+      preserve_tabs: true # Preserves tabs in fenced code blocks.
+
+      # (https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml)
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+
+        # it's possible to get mermaid diagrams working, but needs some extra configs and .js files; (https://facelessuser.github.io/pymdown-extensions/extras/mermaid/)
+        # - name: mermaid
+        #   class: mermaid
+        #   format: !!python/name:pymdownx.superfences.fence_code_format
+
+
+  # add tabbed Markdown content, i.e hide content sideways, like browser tabs; (https://squidfunk.github.io/mkdocs-material-insiders/reference/content-tabs/); (https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/)
+  - pymdownx.tabbed:
+
+
+  # inline code highlighting with `:::python code` syntax; (https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/); (https://squidfunk.github.io/mkdocs-material-insiders/reference/code-blocks/#inlinehilite)
+  - pymdownx.inlinehilite:
+      custom_inline:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.inline_mathjax_format
+
+
+  # single place to control code highlighting & line numbering; (https://facelessuser.github.io/pymdown-extensions/extensions/highlight/)
+  - pymdownx.highlight:
+
+      # linenums: false # enable line counting globally
+      linenums_style: pymdownx.inline # change the style with which line numbers render; (https://squidfunk.github.io/mkdocs-material-insiders/reference/code-blocks/#highlight)
+
+      # if code-block language is not specified, it is guessed; (https://facelessuser.github.io/pymdown-extensions/extensions/highlight/)
+      guess_lang: true
+
+      # (https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml)
+      extend_pygments_lang:
+        - name: php-inline
+          lang: php
+          options:
+            startinline: true
+        - name: pycon3
+          lang: pycon
+          options:
+            python3: true
+
+
+  # enable critic-markup support; (https://squidfunk.github.io/mkdocs-material-insiders/reference/formatting/)
+  - pymdownx.critic:
+      mode: view
+
+
+  # improves emphasis (bold, italic) handling; (https://squidfunk.github.io/mkdocs-material-insiders/reference/formatting/#betterem) ; (https://facelessuser.github.io/pymdown-extensions/extensions/betterem/)
+  - pymdownx.betterem:
+      smart_enable: all
+
+
+  # enables insert (^^text^^) and superscript (^text^) support; (https://squidfunk.github.io/mkdocs-material-insiders/reference/formatting/#caret-mark-tilde) ; (https://facelessuser.github.io/pymdown-extensions/extensions/caret/)
+  - pymdownx.caret:
+      insert: true # enable insert support
+      superscript: true # enable superscript support
+
+
+  # enables highlight markings (==text==) support; (https://squidfunk.github.io/mkdocs-material-insiders/reference/formatting/#caret-mark-tilde) ; (https://facelessuser.github.io/pymdown-extensions/extensions/tilde/)
+  - pymdownx.mark:
+      smart_mark: true
+
+
+  # enables striking-out text (~~text~~) and subscripts (~text~) support; (https://squidfunk.github.io/mkdocs-material-insiders/reference/formatting/#caret-mark-tilde) ; (https://facelessuser.github.io/pymdown-extensions/extensions/tilde/)
+  - pymdownx.tilde:
+      smart_delete: true
+      delete: true # enable striking out support
+      subscript: true # enable subscript support
+
+
+  # enables support for special characters to be converted to respective icons; (https://squidfunk.github.io/mkdocs-material-insiders/reference/formatting/?h=+mark#smartsymbols) ; (https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/)
+  - pymdownx.smartsymbols:
+      trademark: true # Add syntax for trademark symbol.
+      copyright: true # Add syntax for copyright symbol.
+      registered: true # Add syntax for registered symbol.
+      care_of: true # Add syntax for care / of.
+      plusminus: true # Add syntax for plus / minus.
+      arrows: true # Add syntax for creating arrows.
+      notequal: true # Add syntax for not equal symbol.
+      fractions: true # Add syntax for common fractions.
+      ordinal_numbers: true # Add syntax for ordinal numbers.
+
+
+  # keyboard keys wrapper styling; (https://squidfunk.github.io/mkdocs-material-insiders/reference/code-blocks/#keys); (https://facelessuser.github.io/pymdown-extensions/extensions/keys/)
+  - pymdownx.keys:
+      separator: '+'
+
+
+  # display mathematical content in the browser ; (https://squidfunk.github.io/mkdocs-material-insiders/reference/mathjax/)
+  - pymdownx.arithmatex:
+      generic: true
+
+
+  # add additional content to parts of the text which are then shown on hover; (https://squidfunk.github.io/mkdocs-material-insiders/reference/abbreviations/#snippets); (https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
+  # - pymdownx.snippets:
+  #     base_path: '.'
+  #     encoding: utf-8
+  #     check_paths: true
+
+
+  # adds the ability to integrate icons in the *.svg file format; (https://squidfunk.github.io/mkdocs-material-insiders/setup/changing-the-logo-and-icons/?h=+pymdownx.emoji#icons)
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+
+  # enables a feature that automatically turns 'link text' (e.g. "fake.email@email.com", "@facelessuser", "@gitlab:pycqa/flake8") into formatted to the context, clickable, shorthand links, with svg icons next preceding them; (https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)
+  - pymdownx.magiclink:
+      provider: github # The provider to use for repository shorthand syntax and shortener.
+      user: akharou # The default user name to use for the specified provider.
+      repo: 42-silicon-valley # The default repository name to use for the specified user and provider.
+
+      hide_protocol: true # If True, links are displayed without the initial ftp://, http://, https://, or ftps://.
+      repo_url_shortener: true # If True, GitHub, Bitbucket, and GitLab commit, pull, and issue links are are rendered in a shorthand syntax.
+      repo_url_shorthand: true # If True, you can directly use a shorthand syntax to represent commit, pull, issue, and mention links for repository providers and they will be auto-linked.
+      social_url_shortener: true # if True, Twitter user links are rendered in a shorthand syntax.
+      social_url_shorthand: true # If True, you can directly use a shorthand syntax to represent mention links for social media providers and they will be auto-linked.
+
+      labels: { # A dictionary for overriding repository link title text. See Labels for more info.
+          'commit': 'Commit',
+          'compare': 'Compare',
+          'issue': 'Issue',
+          'pull': 'Pull Request',
+          'mention': 'User',
+          'repository': 'Repository'
+      }
+      shortener_user_exclude: { # Specifies a list of user names to avoid when attempting to shorten links. See User Excludes for more info.
+          "bitbucket": ['dashboard', 'account', 'plans', 'support', 'repo'],
+          "github": ['marketeplace', 'notifications', 'issues', 'pull', 'sponsors', 'settings', 'support'],
+          "gitlab": ['dashboard', '-', 'explore', 'help', 'projects'],
+          "twitter": ['i', 'messages', 'bookmarks', 'home']
+      }
+
+
+  # enables support for progress bar with the following syntax: `[= <percentage or fraction> "optional single or double quoted title"]{: classes} (e.g. .candystripe, .candystripe-animate, .thin)` ; (https://facelessuser.github.io/pymdown-extensions/extensions/progressbar/)
+  - pymdownx.progressbar:
+      level_class: true # Enables or disables the level class feature. The level class feature adds level classes in increments defined by progress_increment.
+      progress_increment: 20 # Defines the increment at which the level_class classes are generated at.
+      add_classes: '' # This option accepts a string of classes separated by spaces.
+
+
+  # enables feature that requires headers to have spaces after the hashes (#) in order to be recognized as headers. This allows for other extension syntaxes to use '#' (e.g. #tags, magiclinks for issues '#998'); (https://facelessuser.github.io/pymdown-extensions/extensions/saneheaders/)
+  - pymdownx.saneheaders
+
+
+  # embed local png, jpeg and gif references with base64 encoding; (https://facelessuser.github.io/pymdown-extensions/extensions/b64/)
+  # - pymdownx.b64:
+  #     base_path: '_assets/'
+
+
+# url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 00-5 5 5 5 0 005 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 005-5 5 5 0 00-5-5z"/></svg>')
+
+
+# -- >Markdown -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+# website extensions
+plugins:
+
+  # (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-site-search/#built-in-search)
+  - search:
+
+      lang: en
+
+      # separator for indexing and query tokenization can be customized, making it possible to index parts of words separated by other characters than whitespace and `-`
+      separator: '[\s\-\.]+'
+
+      # can generate a prebuilt index of all pages during build time, which provides performance improvements at the cost of more bandwidth, as it reduces the build time of the search index; significant performance increase for big docs (e.g. hundreds of pages, else not worth it)
+      prebuild_index: true
+
+
+  # - fastsearch: # currently doesn't work
+
+
+  # enables displaying the date of the last git modification of a page; (https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/blob/master/README.md)
+  - git-revision-date-localized:
+      type: timeago
+      time_zone: UTC
+      locale: en
+      fallback_to_build_date: false
+
+
+  # For full docs enumeration coverage: https://github.com/timvink/mkdocs-enumerate-headings-plugin
+  # - enumerate-headings:
+  #     toc_depth: 0
+  #     strict: true
+
+
+  # automatically number the headings (h1-h6) in each markdown page and the nav. This only affects your rendered HTML and does not affect the markdown files; (https://github.com/ignorantshr/mkdocs-add-number-plugin)
+  - add-number:
+      increment_topnav: false
+      increment_pages: false
+      order: 2
+      strict_mode: false
+      excludes:
+      includes:
+
+
+  # https://github.com/chrieke/mkdocs-exclude-search
+  # - exclude-search:
+  #     exclude:
+  #       - index.md
+
+
+  # https://github.com/apenwarr/mkdocs-exclude
+  - exclude:
+      glob:
+        - notebooks.md
+        - tmp.md
+        - "*.tmp"
+        - "*.pdf"
+        - "*.gz"
+      regex:
+        - '.*\.(tmp|bin|tar)$'
+
+
+  # https://github.com/byrnereese/mkdocs-minify-plugin
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+          remove_comments: true
+
+
+  # enables support for wikilink syntax; (https://github.com/Jackiexiao/mkdocs-roamlinks-plugin)
+  - roamlinks
+
+
+  # enables support for variables, macros (functions) and jinja templating wihtin markdown files; (https://squidfunk.github.io/mkdocs-material-insiders/reference/variables/); (https://github.com/fralau/mkdocs_macros_plugin); pip install mkdocs-macros-plugin
+  - macros:
+      module_name: includes/main # Name of the Python module, file or directory, without extension; you may specify a path (e.g. include/module)
+      include_yaml: [ includes/vars.yml ]
+      # include_dir: includes # doesn't work; ' Directory for including external files
+      # include_yaml: ''              # List of yaml files to be included
+      # j2_block_start_string: ''     # Non-standard Jinja2 marker for start of block
+      # j2_block_end_string: ''       # Non-standard Jinja2 marker for end of block
+      # j2_variable_start_string: ''  # Non-standard Jinja2 marker for start of variable
+      # j2_variable_end_string: ''    # Non-standard Jinja2 marker for end of variable
+
+
+  # enables building multiple sets of documentation in a single Mkdocs; (https://github.com/backstage/mkdocs-monorepo-plugin); (https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins#monorepo)
+  # - monorepo
+
+
+  # allows redirections
+  - redirects:
+        redirect_maps:
+            # Examples:
+            # 'old.md': 'new.md'
+            # 'old/file.md': 'new/file.md'
+            # 'some_file.md': 'http://external.url.com/foobar'
+
+            'Emphasis - mkdw,nts,ksa,2020-1101131959.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
+            'Underline - mkdw,nts,ksa,2020-1101131945.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
+            'Strike-through - mkdw,nts,ksa,2020-1101131644.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
+            # 'Critic-markup - mkdw,nts,ksa,2020-1101132021.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
+
+
+# extra:
+
+
+
+
+# -- >Content -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+nav:
+
+  # - Home:
+  #   - Welcome: index.md
+
+  # - Notebooks:
+  #   - '': notebooks.md
+
+      # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    # - 'Markdown (MKDW)':
+      # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+      - 'MKDW ➤ Overview': Overview - mkdw,nts,ksa,2020-1101091656.md
+      - 'MKDW ➤ Callouts': Callouts - mkdw,nts,ksa,2020-1031114253.md
+      - 'MKDW ➤ Data tables': Data tables - mkdw,nts,ksa,2020-1101095858.md
+      - 'MKDW ➤ Footnotes': Footnotes - mkdw,nts,ksa,2020-1101104435.md
+      - 'MKDW ➤ Emojis and icons': Emojis and icons - mkdw,nts,ksa,2020-1101104824.md
+      - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
+      - 'MKDW ➤ Lists': Lists - mkdw,nts,ksa,2020-1101104845.md
+      - 'MKDW ➤ Math notation': Math notation - mkdw,nts,ksa,2020-1101104905.md
+      - 'MKDW ➤ Meta tags': Meta tags - mkdw,nts,ksa,2020-1101104945.md
+      - 'MKDW ➤ Macros and variables': Macros and variables - mkdw,nts,ksa,2020-1101105007.md
+      # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+      - 'MKDW ➤ Formatting': Formatting - mkdw,nts,ksa,2020-1101125635.md
+      # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+      # - 'MKDW ➤ Emphasis': Emphasis - mkdw,nts,ksa,2020-1101131959.md
+      # - 'MKDW ➤ Underline': Underline - mkdw,nts,ksa,2020-1101131945.md
+      # - 'MKDW ➤ Strike-through': Strike-through - mkdw,nts,ksa,2020-1101131644.md
+      - 'MKDW ➤ Special characters': Special characters - mkdw,nts,ksa,2020-1101131621.md
+      - 'MKDW ➤ Superscript and subscript': Superscript and subscript - mkdw,nts,ksa,2020-1101104802.md
+      - 'MKDW ➤ Highlight marks': Highlight marks - mkdw,nts,ksa,2020-1101115332.md
+      - 'MKDW ➤ Critic-markup': Critic-markup - mkdw,nts,ksa,2020-1101132021.md
+      # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+      - 'MKDW ➤ Mkdocs': Mkdocs - mkdw,nts,ksa,2020-1101200211.md
+      # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+      - 'MKDW ➤ Extending mkdocs-material': 'Extending mkdocs-material - mkdw,nts,ksa,2020-1101214900.md'
+
+
+    #   # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    # - 'LaTeX (LTEX)':
+    #   # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    #   - 'Waiting Room': tmp.md
+
+
+    #   # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    # - 'Philosophy (PHLO)':
+    #   # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    #   - 'Waiting Room': tmp.md
+
+
+    #   # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    # - 'Mathematics (MTH)':
+    #   # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    #   - 'Waiting Room': tmp.md
+
+
+    #   # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    # - 'Physics (PHSC)':
+    #   # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+    #   - 'Waiting Room': tmp.md
+
+
+  # - References:
+
+  #   - Welcome: index.md
+
+  # - Courses:
+  #   - Welcome: index.md
+  # - Dictionary:
+  #   - Welcome: index.md
+
+
+  # - About:
+  #   - Release Notes:
+  #       - '6.0': about/releases/6.0.md

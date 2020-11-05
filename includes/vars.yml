@@ -1,0 +1,7 @@
+class:
+  teacher: Sam Walten
+  students: [
+    John Doe,
+    Steve Smith,
+    Carla Dennis
+  ]

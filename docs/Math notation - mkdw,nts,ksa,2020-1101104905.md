@@ -1,0 +1,95 @@
+# MKDW ➤ Math notation
+
+## Synopsis
+
+Math notation is supported with the folliwng syntaxes: `$...$` OR `\(...\)` for inline, `$$...$$` OR `\[...\]` for blocks.
+
+??? info "Mkdocs Configuration"
+
+    === "mkdocs.yml"
+
+        ```yaml
+        markdown_extensions:
+          - pymdownx.arithmatex:
+              generic: true
+
+        extra_javascript:
+          - javascripts/config.js
+          - https://polyfill.io/v3/polyfill.min.js?features=es6
+          - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+        ```
+
+    === "docs/javascripts/config.js"
+
+        ```js
+        window.MathJax = {
+          tex: {
+            inlineMath: [["\\(", "\\)"]],
+            displayMath: [["\\[", "\\]"]],
+            processEscapes: true,
+            processEnvironments: true
+          },
+          options: {
+            ignoreHtmlClass: ".*|",
+            processHtmlClass: "arithmatex"
+          }
+        };
+        ```
+
+## Examples
+
+=== "Inline"
+
+    In
+    : <space>
+      ```
+      The homomorphism $f$ is injective if and only if its kernel is only the
+      singleton set $e_G$, because otherwise $\exists a,b\in G$ with $a\neq
+      b$ such that $f(a)=f(b)$.
+
+      $p(x|y) = \frac{p(y|x)p(x)}{p(y)}$, \(p(x|y) = \frac{p(y|x)p(x)}{p(y)}\).$
+      ```
+
+    ---
+
+    Out
+    : <space>
+      The homomorphism $f$ is injective if and only if its kernel is only the singleton set $e_G$, because otherwise $\exists a,b\in G$ with $a\neq b$ such that $f(a)=f(b)$.<br><br>$p(x|y) = \frac{p(y|x)p(x)}{p(y)}$, \(p(x|y) = \frac{p(y|x)p(x)}{p(y)}\).$
+
+=== "Block"
+
+    In
+    : <space>
+      ```
+      $$
+      E(\mathbf{v}, \mathbf{h}) = -\sum_{i,j}w_{ij}v_i h_j - \sum_i b_i v_i - \sum_j c_j h_j
+      $$
+
+      \[3 < 4\]
+
+      \begin{align}
+          p(v_i=1|\mathbf{h}) & = \sigma\left(\sum_j w_{ij}h_j + b_i\right) \\
+          p(h_j=1|\mathbf{v}) & = \sigma\left(\sum_i w_{ij}v_i + c_j\right)
+      \end{align}
+      ```
+
+    ---
+
+    Out
+    : <space>
+
+    $$
+    E(\mathbf{v}, \mathbf{h}) = -\sum_{i,j}w_{ij}v_i h_j - \sum_i b_i v_i - \sum_j c_j h_j
+    $$
+
+    \[3 < 4\]
+
+    \begin{align}
+        p(v_i=1|\mathbf{h}) & = \sigma\left(\sum_j w_{ij}h_j + b_i\right) \\
+        p(h_j=1|\mathbf{v}) & = \sigma\left(\sum_i w_{ij}v_i + c_j\right)
+    \end{align}
+
+## References
+
+- [Mkdocs-Material ➤ MathJax](https://squidfunk.github.io/mkdocs-material-insiders/reference/mathjax/)
+- [Pymdown ➤ Arithmatex](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
