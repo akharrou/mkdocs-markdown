@@ -441,8 +441,8 @@ extra:
   price: 12.50
   company:
       name: Acme
-      address: ....
-      website: www.acme.com
+      address: acme@labs.com
+      website: https://www.acme.com
 
 
 

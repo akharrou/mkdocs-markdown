@@ -13,13 +13,15 @@ collaborators: [
 In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://github.com/fralau/mkdocs_macros_plugin) adds support for referencing variables, calling macros (functions) and supports [Jinja](https://jinja.palletsprojects.com/) templating directly from Markdown.
 
 ??? info "Mkdocs Configuration"
+
     ```bash
     pip install mkdocs-macros-plugin
-```
+    ```
+
     ```yaml
     plugins:
       - macros
-```
+    ```
 
 ## Examples
 
@@ -55,6 +57,8 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
           See [more information on the website]({​{ company.website }}).
 
           See <a href="{​{ company.website }}">more information on the website</a>.
+
+          Contact us at {​{ company.address }}.
           ```
 
         ---
@@ -62,11 +66,13 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
         Out
         : <space>
 
-            The price of the product is {{ price }}.
+            The price of the product is {{ price }}. {{ company.website }}
 
             See [more information on the website]({{ company.website }}).
 
             See <a href="{{ company.website }}">more information on the website</a>.
+
+            Contact us at {{ company.address }}.
 
     === "(Global) External `.yml`"
 
