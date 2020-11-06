@@ -18,6 +18,7 @@ There are few types of lists:
       - pymdownx.tasklist:
           custom_checkbox: true
           clickable_checkbox: true
+      - pymdownx.superfences # enables nesting of content blocks within lists
     ```
 
 ## Examples
@@ -127,6 +128,52 @@ There are few types of lists:
           * [ ] Praesent sed risus massa
       * [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
 
+=== "Nesting"
+
+    In
+    : <space>
+
+        ````
+        - item
+
+            ```
+            nested code block
+            ```
+
+        - [x] Write specification
+
+            ```
+            nested code block
+            ```
+
+        Term
+        :   <space>
+            ```
+            nested code block
+            ```
+        ````
+
+    ---
+
+    Out
+    : <space>
+
+        - item
+
+            ```
+            nested content block
+            ```
+
+        - [x] Write specification
+
+            ```
+            nested content block
+            ```
+
+        Term
+        :   too much nesting messes up definition lists
+
 ## References
 
 - [Mkdocs-Material ➤ Lists](https://squidfunk.github.io/mkdocs-material-insiders/reference/lists/)
+- [Pymdown-extension ➤ Superfences](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/)

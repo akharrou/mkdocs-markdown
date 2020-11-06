@@ -21,7 +21,7 @@ Fixed (admonitions/callouts) or collapsible (details/summary) content.
     markdown_extensions:
         - admonition
         - pymdownx.details
-        - pymdownx.superfences # allows nesting code and content blocks inside admonitions/details
+        - pymdownx.superfences # enables nesting of content blocks within admonitions/details
     ```
 
 ## Examples
@@ -133,3 +133,4 @@ Fixed (admonitions/callouts) or collapsible (details/summary) content.
 1. [Mkdocs-Material ➤ Admonitions](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/)
 2. [Pymdown-Extensions ➤ Admonitions](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/)
 3. [Pymdown-Extensions ➤ Details](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/)
+- [Pymdown-extension ➤ Superfences](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/)
