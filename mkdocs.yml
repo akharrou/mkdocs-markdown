@@ -367,19 +367,26 @@ plugins:
 
 
   # For full docs enumeration coverage: https://github.com/timvink/mkdocs-enumerate-headings-plugin
-  # - enumerate-headings:
-  #     toc_depth: 0
-  #     strict: true
-
-
-  # automatically number the headings (h1-h6) in each markdown page and the nav. This only affects your rendered HTML and does not affect the markdown files; (https://github.com/ignorantshr/mkdocs-add-number-plugin)
+  - enumerate-headings:
+      toc_depth: 2
+      strict: true
   - add-number:
-      increment_topnav: false
+      increment_topnav: true
       increment_pages: false
-      order: 2
+      order: 6
       strict_mode: false
       excludes:
       includes:
+
+
+  # automatically number the headings (h1-h6) in each markdown page and the nav. This only affects your rendered HTML and does not affect the markdown files; (https://github.com/ignorantshr/mkdocs-add-number-plugin)
+  # - add-number:
+  #     increment_topnav: true
+  #     increment_pages: false
+  #     order: 2
+  #     strict_mode: false
+  #     excludes:
+  #     includes:
 
 
   # https://github.com/chrieke/mkdocs-exclude-search
@@ -459,10 +466,11 @@ nav:
       - 'MKDW ➤ Highlight marks': Highlight marks - mkdw,nts,ksa,2020-1101115332.md
       - 'MKDW ➤ Critic-markup': Critic-markup - mkdw,nts,ksa,2020-1101132021.md
       # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-      - 'MKDW ➤ Math notation': Math notation - mkdw,nts,ksa,2020-1101104905.md
       - 'MKDW ➤ Lists': Lists - mkdw,nts,ksa,2020-1101104845.md
-      - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
+      - 'MKDW ➤ Code': Code - mkdw,nts,ksa,2020-1106142858.md
+      - 'MKDW ➤ Math': Math - mkdw,nts,ksa,2020-1101104905.md
       - 'MKDW ➤ Tables': Tables - mkdw,nts,ksa,2020-1101095858.md
+      - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
       - 'MKDW ➤ Emojis and icons': Emojis and icons - mkdw,nts,ksa,2020-1101104824.md
       - 'MKDW ➤ Footnotes': Footnotes - mkdw,nts,ksa,2020-1101104435.md
       - 'MKDW ➤ Abbreviations and glossaries': Abbreviations and glossaries - mkdw,nts,ksa,2020-1105182229.md

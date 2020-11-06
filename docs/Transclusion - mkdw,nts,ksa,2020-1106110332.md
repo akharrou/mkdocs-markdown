@@ -119,7 +119,7 @@ Include contents of another file within the working page.
         ```markdown
         HTML is the language of the web.
 
-        {​% include "glossary.md" %}
+        {​% include "includes/glossary.md" %}
         ```
 
     ---
@@ -128,6 +128,8 @@ Include contents of another file within the working page.
     : <space>
 
         HTML is the language of the web.
+
+        {% include "includes/glossary.md" %}
 
 ## References
 
