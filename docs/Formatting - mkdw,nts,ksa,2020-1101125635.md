@@ -9,21 +9,18 @@ Possible text formatting:
 - [[Strike-through - mkdw,nts,ksa,2020-1101131644|Strike-through]]
 - [[Superscript and subscript - mkdw,nts,ksa,2020-1101104802|Superscript and subscript]]
 - [[Special characters - mkdw,nts,ksa,2020-1101131621|Special characters]]
-- [[Highlight marks - mkdw,nts,ksa,2020-1101115332|Highlighting]]
+- [[Highlight marks - mkdw,nts,ksa,2020-1101115332|Highlighting marks]]
 - [[Critic-markup - mkdw,nts,ksa,2020-1101132021|Critic-markup]]
 
-??? "Mkdocs Configurations"
-
-    Install [`mkdocs-material`](https://squidfunk.github.io/mkdocs-material-insiders/) and [`mkdocs-material-extensions`](https://facelessuser.github.io/pymdown-extensions/):
+??? info "Mkdocs configurations"
 
     ```bash
     pip install mkdocs-material
     pip install mkdocs-material-extensions
     ```
 
-    Then enable the following markdown exntesions via `mkdocs.yml`:
-
     ```yaml
+    # mkdocs.yml
     markdown_extensions:
 
       # improved emphasis

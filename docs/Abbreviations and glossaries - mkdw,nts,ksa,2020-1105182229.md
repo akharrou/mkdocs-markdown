@@ -63,5 +63,5 @@ You can create glossaries whose terms, defined with `*[term]: def`,  will, in th
 - [Python Markdown ➤ Extensions ➤ Abbreviations](https://python-markdown.github.io/extensions/abbreviations/)
 
 <!-- Includes -->
-{% include "glossary.md" %}
+{% include "includes/glossary.md" %}
 <!-- >Includes -->

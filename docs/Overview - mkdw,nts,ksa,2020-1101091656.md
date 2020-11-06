@@ -2,88 +2,15 @@
 
 ## Basic Markdown
 
-See [Markdown Guide :: Basic Syntax](https://www.markdownguide.org/basic-syntax).
+!TODO Basic Markdown
 
 ## Extended Markdown
 
-See [Markdown Guide :: Extended Syntax](https://www.markdownguide.org/extended-syntax).
+!TODO Extended Markdown
 
 ## Python Markdown
 
-See [PyMdown Extensions Documentation](https://facelessuser.github.io/pymdown-extensions/).
-
-### Snippets
-
-Includes the entire contents of other files.
-
-```` markdown
---8<--​ "filename.ext"
-````
-
-Comment out certain files with `;`.
-
-````
---8<--​ ; "skip.md"
-````
-
-Spacing and other elements are preserved in output.
-
-```` narkdown
---8<--​ "filename.md"
-
---8<--​ "filename.log"
-````
-
-### Admonitions (callouts)
-
-[[Callouts - mkdw,nts,ksa,2020-1031114253|MDKW ➤ Callouts]]
-
-### Details
-
-???+ info "Synopsis"
-
-    ```
-    ???[+] <class> "opt-title"
-
-        <content>
-    ```
-
-    Adds collapsable boxed content.
-
-??? tldr "Details"
-
-    ??? info "Parameters"
-
-        ??? info "`[+]`"
-
-            If specified, sets default state of the box to be open (not collapsed); default is closed.
-
-        ??? info "`class`"
-
-            See [[Callouts - mkdw,nts,ksa,2020-1030204944]].
-
-??? example "Examples"
-
-    === "Nested open/closed style"
-
-        ???+ note "Open styled details"
-
-            ??? danger "Nested details!"
-                And more content again.
-
-        ---
-
-        ```
-        ???+ note "Open styled details"
-
-            ??? danger "Nested details!"
-                And more content again.
-        ```
-
-??? faq "References"
-
-    - [mkdocs::reference::admonitions::details](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/#details)
-    - [pymdown-extensions::details](https://facelessuser.github.io/pymdown-extensions/extensions/details/)
+!TODO Python Markdown
 
 ### Superfence
 
@@ -149,9 +76,13 @@ Spacing and other elements are preserved in output.
 
 ### Code syntax highlighting, line numbering & line highlighting
 
-Enabled via `mkdocs.yml`:
+```bash
+pip install mkdocs-material
+pip install mkdocs-material-extensions
+```
 
-```yml
+```yaml
+# mkdocs.yml
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
@@ -218,42 +149,8 @@ Inline code highlighting, e.g.: `:::python import foo`. Requires `pymdownx.inlin
 
 Mermaid diagrams are also possible but require some more configuration and extra `.js` files, etc. See [Pymdown-Extensions ➤ Advanced Mermaid Notes](https://facelessuser.github.io/pymdown-extensions/extras/mermaid/).
 
-### Buttons
+## References
 
-=== "Out"
-
-    [Home](index.md){: .md-button}
-
-=== "In"
-
-    ```markdown
-    [Home](index.md){: .md-button}
-    ```
-
-Enabled via `mkdocs.yml`:
-
-```yml
-markdown_extensions:
-  - attr_list
-```
-
-### Keyboard Keys
-
-=== "Out"
-
-    ++ctrl+alt+enter++
-
-=== "In"
-
-    ```
-    ++ctrl+alt+enter++
-    ```
-
-See all possbile keys at [Pymdown-Extensions ➤ Keys](https://facelessuser.github.io/pymdown-extensions/extensions/keys/). Enabled via `mkdocs.yml`:
-
-```yml
-markdown_extensions:
-  - pymdownx.keys
-```
-
-### >end
+- [Markdown Guide :: Basic Syntax](https://www.markdownguide.org/basic-syntax)
+- [Markdown Guide :: Extended Syntax](https://www.markdownguide.org/extended-syntax)
+- [PyMdown Extensions Documentation](https://facelessuser.github.io/pymdown-extensions/)

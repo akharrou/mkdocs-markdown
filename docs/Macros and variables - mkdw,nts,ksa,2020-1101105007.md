@@ -12,7 +12,7 @@ collaborators: [
 
 In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://github.com/fralau/mkdocs_macros_plugin) adds support for referencing variables, calling macros (functions) and supports [Jinja](https://jinja.palletsprojects.com/) templating directly from Markdown.
 
-??? info "Mkdocs Configuration"
+??? info "Mkdocs configurations"
 
     ```bash
     pip install mkdocs-macros-plugin
@@ -257,7 +257,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
               return x.upper()[::-1]
 
           env.macro(len)
-          env.filter(len)
+          env.filter(len, "flen")
         ```
         ```bash
         .
@@ -276,7 +276,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
         ```
         ```markdown
         <!-- *.md -->
-        '{​{ helloworld() }}' is {​{ helloworld()|len }} characters in length.
+        '{​{ helloworld() }}' is {​{ helloworld()|flen }} characters in length.
         '{​{ farewell }}' is {​{ len(farewell) }} characters in length !
         {​{ greeting | reverse }} is a funny word, real funny.
         ```
@@ -284,7 +284,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
       ---
 
       Out
-      : '{{ helloworld() }}' is {{ helloworld()|len }} characters in length. '{{ farewell }}' is {{ len(farewell) }} characters in length ! {{ greeting | reverse }} is a funny word, real funny.
+      : '{{ helloworld() }}' is {{ helloworld()|flen }} characters in length. '{{ farewell }}' is {{ len(farewell) }} characters in length ! {{ greeting | reverse }} is a funny word, real funny.
 
 === "Predefined Variables"
 

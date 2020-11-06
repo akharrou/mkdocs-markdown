@@ -4,14 +4,18 @@
 
 [Critic-markup](http://criticmarkup.com/) sytnax is supported.
 
-!!! info "Mkdocs Configuration"
+??? info "Mkdocs configurations"
 
-    Enable via `mkdocs.yml`:
+    ```bash
+    pip install mkdocs-material
+    pip install mkdocs-material-extensions
+    ```
 
     ```yaml
+    # mkdocs.yml
     markdown_extensions:
-    - pymdownx.critic:
-        mode: view
+        - pymdownx.critic:
+            mode: view
     ```
 
 ## Examples

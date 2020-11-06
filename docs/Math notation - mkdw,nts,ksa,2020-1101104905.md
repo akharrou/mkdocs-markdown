@@ -4,7 +4,7 @@
 
 Math notation is supported with the folliwng syntaxes: `$...$` OR `\(...\)` for inline, `$$...$$` OR `\[...\]` for blocks.
 
-??? info "Mkdocs Configuration"
+??? info "Mkdocs configurations"
 
     === "mkdocs.yml"
 

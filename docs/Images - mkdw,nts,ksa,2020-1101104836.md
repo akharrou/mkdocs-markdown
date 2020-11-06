@@ -2,18 +2,23 @@
 
 ## Synopsis
 
-Images are supported with the `![alt](path)` syntax, and with third party plugins, wiki-link syntax `![[​img|alt]]` also becomes available.
+Images are supported with the `![alt](path)` syntax, and wiki-link syntax `![[​img|alt]]` with third party plugins (e.g. for Mkdocs, [Roamlinks](https://github.com/Jackiexiao/mkdocs-roamlinks-plugin)).
 
-??? warning "Mkdocs Configuration"
+??? info "Mkdocs configurations"
 
-        With the [Attribute List](https://python-markdown.github.io/extensions/attr_list/) extension, you can add HTML attributes and CSS classes to markdown elements, such as images. You can use this to align images easily.
+    With the [Attribute List](https://python-markdown.github.io/extensions/attr_list/) extension, you can add HTML attributes and CSS classes to markdown elements, such as images. You can use this to align images easily.
 
-        Enabled via `mkdocs.yml`:
+    ```bash
+    pip install mkdocs-material
+    pip install mkdocs-material-extensions
+    pip install mkdocs-roamlinks-plugin
+    ```
 
-        ```yaml
-        markdown_extensions:
-          - attr_list
-        ```
+    ```yaml
+    # mkdocs.yml
+    markdown_extensions:
+      - attr_list
+    ```
 
 ## Examples
 

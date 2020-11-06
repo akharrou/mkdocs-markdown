@@ -276,11 +276,11 @@ markdown_extensions:
       generic: true
 
 
-  # adds additional content to parts of the text which are then shown on hover,, but use `mkdocs-macros` plugin support for: `{% include 'file.md' %}` instead; (https://squidfunk.github.io/mkdocs-material-insiders/reference/abbreviations/#snippets); (https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
-  # - pymdownx.snippets:
-  #     base_path: '.'
-  #     encoding: utf-8
-  #     check_paths: true
+  # adds additional content to parts of the text which are then shown on hover,, but use `mkdocs-macros` plugin support for: `{% include "includes/file.md' %}` instead; (https://squidfunk.github.io/mkdocs-material-insiders/reference/abbreviations/#snippets); (https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
+  - pymdownx.snippets:
+      base_path: '.'
+      encoding: utf-8
+      check_paths: true
 
 
   # adds the ability to integrate icons in the *.svg file format; (https://squidfunk.github.io/mkdocs-material-insiders/setup/changing-the-logo-and-icons/?h=+pymdownx.emoji#icons)
@@ -414,7 +414,7 @@ plugins:
 
   # enables support for variables, macros (functions) and jinja templating wihtin markdown files; (https://squidfunk.github.io/mkdocs-material-insiders/reference/variables/); (https://github.com/fralau/mkdocs_macros_plugin); pip install mkdocs-macros-plugin
   - macros:
-      include_dir: includes/ # with regards to `{% include 'filename.ext' %}`; relative path for includes directive, by default the root directory for your included files is in docs_dir; (https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/#including-snippets-in-pages)
+      include_dir: ./ # with regards to `{% include "includes/filename.ext' %}`; relative path for includes directive, by default the root directory for your included files is in docs_dir; (https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/#including-snippets-in-pages)
       module_name: includes/main # Name of the Python module, file or directory, without extension; you may specify a path (e.g. include/module)
       include_yaml: [ includes/vars.yml ]
       # include_dir: includes # doesn't work; ' Directory for including external files
@@ -451,16 +451,6 @@ nav:
     # - 'Markdown (MKDW)':
       # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
       - 'MKDW ➤ Overview': Overview - mkdw,nts,ksa,2020-1101091656.md
-      - 'MKDW ➤ Callouts': Callouts - mkdw,nts,ksa,2020-1031114253.md
-      - 'MKDW ➤ Tables': Tables - mkdw,nts,ksa,2020-1101095858.md
-      - 'MKDW ➤ Footnotes': Footnotes - mkdw,nts,ksa,2020-1101104435.md
-      - 'MKDW ➤ Abbreviations and glossaries': Abbreviations and glossaries - mkdw,nts,ksa,2020-1105182229.md
-      - 'MKDW ➤ Emojis and icons': Emojis and icons - mkdw,nts,ksa,2020-1101104824.md
-      - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
-      - 'MKDW ➤ Lists': Lists - mkdw,nts,ksa,2020-1101104845.md
-      - 'MKDW ➤ Math notation': Math notation - mkdw,nts,ksa,2020-1101104905.md
-      - 'MKDW ➤ Meta tags': Meta tags - mkdw,nts,ksa,2020-1101104945.md
-      - 'MKDW ➤ Macros and variables': Macros and variables - mkdw,nts,ksa,2020-1101105007.md
       # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
       - 'MKDW ➤ Formatting': Formatting - mkdw,nts,ksa,2020-1101125635.md
       # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -469,6 +459,20 @@ nav:
       - 'MKDW ➤ Highlight marks': Highlight marks - mkdw,nts,ksa,2020-1101115332.md
       - 'MKDW ➤ Critic-markup': Critic-markup - mkdw,nts,ksa,2020-1101132021.md
       # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+      - 'MKDW ➤ Math notation': Math notation - mkdw,nts,ksa,2020-1101104905.md
+      - 'MKDW ➤ Lists': Lists - mkdw,nts,ksa,2020-1101104845.md
+      - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
+      - 'MKDW ➤ Tables': Tables - mkdw,nts,ksa,2020-1101095858.md
+      - 'MKDW ➤ Emojis and icons': Emojis and icons - mkdw,nts,ksa,2020-1101104824.md
+      - 'MKDW ➤ Footnotes': Footnotes - mkdw,nts,ksa,2020-1101104435.md
+      - 'MKDW ➤ Abbreviations and glossaries': Abbreviations and glossaries - mkdw,nts,ksa,2020-1105182229.md
+      - 'MKDW ➤ Admonitions and details': Admonitions and details - mkdw,nts,ksa,2020-1031114253.md
+      - 'MKDW ➤ Tabs': 'Tabs - mkdw,nts,ksa,2020-1106091728.md'
+      - 'MKDW ➤ Transclusion': Transclusion - mkdw,nts,ksa,2020-1106110332.md
+      - 'MKDW ➤ Keyboard keys': 'Keyboard keys - mkdw,nts,ksa,2020-1106100206.md'
+      - 'MKDW ➤ Buttons': 'Buttons - mkdw,nts,ksa,2020-1106101115.md'
+      - 'MKDW ➤ Meta tags': Meta tags - mkdw,nts,ksa,2020-1101104945.md
+      - 'MKDW ➤ Macros and variables': Macros and variables - mkdw,nts,ksa,2020-1101105007.md
       - 'MKDW ➤ Mkdocs': Mkdocs - mkdw,nts,ksa,2020-1101200211.md
       # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
       - 'MKDW ➤ Extending mkdocs-material': 'Extending mkdocs-material - mkdw,nts,ksa,2020-1101214900.md'

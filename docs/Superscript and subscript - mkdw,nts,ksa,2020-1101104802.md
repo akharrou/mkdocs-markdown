@@ -4,11 +4,15 @@
 
 Superscript is supported with the `^txt^` syntax and subscript with the `~txt~` syntax.
 
-!!! info "Mkdocs Configuration"
+??? info "Mkdocs configurations"
 
-    Enabled via `mkdocs.yml`:
+    ```bash
+    pip install mkdocs-material
+    pip install mkdocs-material-extensions
+    ```
 
     ```yaml
+    # mkdocs.yml
     markdown_extensions:
       - pymdownx.caret # superscript
       - pymdownx.tilde # subscript

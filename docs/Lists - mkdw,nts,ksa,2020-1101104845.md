@@ -7,7 +7,7 @@ There are few types of lists:
 - **Ordered**, **Unordered** lists (supported via standard Markdown)
 - **Definition**, **Task** lists (supported via extensions)
 
-??? info "Mkdocs Configuration"
+??? info "Mkdocs configurations"
 
     Enables definition and task lists.
 

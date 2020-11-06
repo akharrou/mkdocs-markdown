@@ -199,5 +199,5 @@ To extend the [[Mkdocs - mkdw,nts,ksa,2020-1101200211|Mkdocs]] [Material theme](
 - [Mkdocs ➤ Styling ➤ Using the theme `custom_dir`](https://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme-custom_dir)
 
 <!-- Includes -->
-{% include 'glossary.md' %}
+{% include "includes/glossary.md" %}
 <!-- >Includes -->

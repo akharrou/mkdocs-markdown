@@ -4,11 +4,15 @@
 
 Highlighted text marks are supported with the `==text==` syntax.
 
-!!! info "Mkdocs Configuration"
+??? info "Mkdocs configurations"
 
-    Enabled via `mkdocs.yml`:
-
+    ```bash
+    pip install mkdocs-material
+    pip install mkdocs-material-extensions
     ```
+
+    ```yaml
+    # mkdocs.yml
     markdown_extensions:
       - pymdownx.mark
     ```
