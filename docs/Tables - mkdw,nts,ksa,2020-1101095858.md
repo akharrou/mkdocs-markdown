@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Tables are supported, with no configuration required.
+Data tables are supported by the Markdown standard, no configuration required.
 
 ## Examples
 
@@ -36,11 +36,11 @@ Tables are supported, with no configuration required.
     : <space>
 
         ```
-        | Method      | Description                          |
+        | Method       | Description                           |
         | :----------: | :-----------------------------------: |
-        | `GET`       | :material-check:     Fetch resource  |
-        | `PUT`       | :material-check-all: Update resource |
-        | `DELETE`    | :material-close:     Delete resource |
+        | `GET`        | :material-check:     Fetch resource   |
+        | `PUT`        | :material-check-all: Update resource  |
+        | `DELETE`     | :material-close:     Delete resource  |
         ```
 
     ---
@@ -48,11 +48,11 @@ Tables are supported, with no configuration required.
     Out
     : <space>
 
-        | Method      | Description                          |
+        | Method       | Description                           |
         | :----------: | :-----------------------------------: |
-        | `GET`       | :material-check:     Fetch resource  |
-        | `PUT`       | :material-check-all: Update resource |
-        | `DELETE`    | :material-close:     Delete resource |
+        | `GET`        | :material-check:     Fetch resource   |
+        | `PUT`        | :material-check-all: Update resource  |
+        | `DELETE`     | :material-close:     Delete resource  |
 
 === "Right Aligned"
 

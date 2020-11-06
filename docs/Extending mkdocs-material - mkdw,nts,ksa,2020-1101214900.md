@@ -142,42 +142,42 @@ To extend the [[Mkdocs - mkdw,nts,ksa,2020-1101200211|Mkdocs]] [Material theme](
 
 === "Add Bootstrap icons"
 
-    Download [Bootstrap Icons from their website](https://icons.getbootstrap.com/#install) and move them into the below structure.
+    In
+    : <space>
 
-    ```bash
-    .
-    ├─ overrides/
-    │  └─ .icons/
-    │     └─ bootstrap/
-    │        └─ *.svg
-    └─ mkdocs.yml
-    ```
+        Download [Bootstrap Icons from their website](https://icons.getbootstrap.com/#install) and move them into a similar structure:
 
-    Add this to your `mkdocs.yml` file.
+        ```bash
+        .
+        ├─ overrides/
+        │  └─ .icons/
+        │     └─ bootstrap/
+        │        └─ *.svg
+        └─ mkdocs.yml
+        ```
 
-    ```yaml
-    # mkdocs.yml
-    markdown_extensions:
-      - pymdownx.emoji:
-          emoji_index: !!python/name:materialx.emoji.twemoji
-          emoji_generator: !!python/name:materialx.emoji.to_svg
-          options:
-            custom_icons:
-              - overrides/.icons
-    ```
+        ```yaml
+        # mkdocs.yml
+        markdown_extensions:
+          - pymdownx.emoji:
+              emoji_index: !!python/name:materialx.emoji.twemoji
+              emoji_generator: !!python/name:materialx.emoji.to_svg
+              options:
+                custom_icons:
+                  - overrides/.icons
+        ```
 
-    ??? info "Usage"
+        ```
+        <!-- docs/*.md -->
+        :bootstrap-emoji-sunglasses:
+        ```
 
-        In
-        : <space>
-          ```
-          :bootstrap-emoji-sunglasses:
-          ```
+    ---
 
-        ---
+    Out
+    : <space>
 
-        Out
-        : :bootstrap-emoji-sunglasses:
+        :bootstrap-emoji-sunglasses:
 
 === "Override blocks"
 
