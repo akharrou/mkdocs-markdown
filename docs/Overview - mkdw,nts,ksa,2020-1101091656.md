@@ -14,6 +14,7 @@
 
 ## References
 
-- [Markdown Guide :: Basic Syntax](https://www.markdownguide.org/basic-syntax)
-- [Markdown Guide :: Extended Syntax](https://www.markdownguide.org/extended-syntax)
-- [PyMdown Extensions Documentation](https://facelessuser.github.io/pymdown-extensions/)
+- [Markdown Guide ➤ Basic Syntax](https://www.markdownguide.org/basic-syntax)
+- [Markdown Guide ➤ Extended Syntax](https://www.markdownguide.org/extended-syntax)
+- [Mkdocs-Material](https://squidfunk.github.io/mkdocs-material-insiders/)
+- [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/)
