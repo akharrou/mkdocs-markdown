@@ -53,4 +53,4 @@
 ## References
 
 - [Mkdocs-Material ➤ Formatting ➤ Critic](https://squidfunk.github.io/mkdocs-material-insiders/reference/formatting/?h=+mark#critic)
-- [Pymdown ➤ Critic](https://facelessuser.github.io/pymdown-extensions/extensions/critic/)
+- [Pymdown-Extensions ➤ Critic](https://facelessuser.github.io/pymdown-extensions/extensions/critic/)

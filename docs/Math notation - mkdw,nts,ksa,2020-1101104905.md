@@ -92,4 +92,4 @@ Math notation is supported with the folliwng syntaxes: `$...$` OR `\(...\)` for 
 ## References
 
 - [Mkdocs-Material ➤ MathJax](https://squidfunk.github.io/mkdocs-material-insiders/reference/mathjax/)
-- [Pymdown ➤ Arithmatex](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
+- [Pymdown-Extensions ➤ Arithmatex](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)

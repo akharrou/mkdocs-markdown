@@ -77,5 +77,5 @@ Boxed content.
 ## References
 
 1. [Mkdocs-Material ➤ References ➤ Admonitions](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/)
-1. [Pymdown-Extensions ➤ References ➤ Details](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/)
-1. [Pymdown-Extensions ➤ References ➤ Admonitions](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/)
+1. [Pymdown-Extensions ➤ Details](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/)
+1. [Pymdown-Extensions ➤ Admonitions](https://squidfunk.github.io/mkdocs-material-insiders/reference/admonitions/)

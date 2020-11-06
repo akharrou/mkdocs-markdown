@@ -216,7 +216,7 @@ Inline code highlighting, e.g.: `:::python import foo`. Requires `pymdownx.inlin
 
 ### Mermaid Diagrams
 
-Mermaid diagrams are also possible but require some more configuration and extra `.js` files, etc. See [Pymdown ➤ Advanced Mermaid Notes](https://facelessuser.github.io/pymdown-extensions/extras/mermaid/).
+Mermaid diagrams are also possible but require some more configuration and extra `.js` files, etc. See [Pymdown-Extensions ➤ Advanced Mermaid Notes](https://facelessuser.github.io/pymdown-extensions/extras/mermaid/).
 
 ### Buttons
 
@@ -254,35 +254,6 @@ See all possbile keys at [Pymdown-Extensions ➤ Keys](https://facelessuser.gith
 ```yml
 markdown_extensions:
   - pymdownx.keys
-```
-
-### Tabs
-
-=== "Out"
-
-    === "Tab-1"
-
-        content-1
-
-    === "Tab-2"
-
-        content-2
-
-=== "In"
-
-    ```
-    === "Tab-1"
-
-        ...
-
-    === "Tab-2"
-
-        ...
-    ```
-
-```yml
-markdown_extensions:
-  - pymdownx.tabbed
 ```
 
 ### >end
