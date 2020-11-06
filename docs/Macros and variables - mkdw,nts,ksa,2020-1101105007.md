@@ -51,7 +51,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
                   website: www.acme.com
           ```
           ```
-          <!-- *.md -->
+          <!-- docs/*.md -->
           The price of the product is {​{ price }}.
 
           See [more information on the website]({​{ company.website }}).
@@ -107,7 +107,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
                     - includes/bar.yml
           ```
           ```plaintext
-          <!-- *.md -->
+          <!-- docs/*.md -->
           Obj: `{​{ class }}`
 
           Today's class teacher will be {​{ class.teacher }}. {​{ class.students|length }} students
@@ -161,7 +161,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
                  module_name: includes/main
           ```
           ```markdown
-          <!-- *.md -->
+          <!-- docs/*.md -->
           {​{ greeting }} and {​{ farewell }} !
           ```
 
@@ -177,7 +177,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
         In
         : <space>
           ```
-          <!-- *.md -->
+          <!-- docs/*.md -->
           ---
           author: '**==John Doe==**'
           collaborators: [
@@ -220,7 +220,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
         In
         : <space>
           ```
-          <!-- *.md -->
+          <!-- docs/*.md -->
           {​% set weather = 'cloudy' %}
           {​% set temperature = 12.5 %}
 
@@ -275,7 +275,7 @@ In [MkDocs](https://www.mkdocs.org/), the [`mkdocs-macros-plugin`](https://githu
                 module_name: includes/main
         ```
         ```markdown
-        <!-- *.md -->
+        <!-- docs/*.md -->
         '{​{ helloworld() }}' is {​{ helloworld()|flen }} characters in length.
         '{​{ farewell }}' is {​{ len(farewell) }} characters in length !
         {​{ greeting | reverse }} is a funny word, real funny.

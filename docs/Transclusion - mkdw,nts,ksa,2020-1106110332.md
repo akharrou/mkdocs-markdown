@@ -19,9 +19,9 @@ Include contents of another file within the working page.
             - pymdownx.snippets
         ```
 
-        !!! success "Preserves styling (e.g. being fenced) and indentations"
+        !!! success "Supports indentations."
 
-        !!! fail "Doesn't support including parts of a file"
+        !!! fail "Doesn't support including parts of a file."
 
     ---
 
@@ -37,13 +37,13 @@ Include contents of another file within the working page.
             - macros
         ```
 
-        !!! success "You can create your own macro that includes parts of a file"
+        !!! warning "Doesn't support including parts of a file, but you can create a custom macro that does just that."
 
-        !!! fail "Gives unexpected behavior when fenced and/or indented"
+        !!! warning "Doesn't support indentations, but you can create a custom macro that does just that."
 
 ## Examples
 
-=== "Include file"
+=== "Include entire file"
 
     In
     : <space>
@@ -67,6 +67,50 @@ Include contents of another file within the working page.
         --8<-- "includes/vars.yml"
         ```
 
+=== "Include parts of file"
+
+    In
+    : <space>
+
+        ```python
+        # includes/main.py
+        import os
+
+        @env.macro
+        def include_file(filename, start=0, stop=None, indent=0, spaces=2):
+            """
+            Include a file, optionally indicating start and stop (starts
+            counting from 0). The path is relative to the top directory of
+            the documentation project.
+            """
+
+            full_filename = os.path.join(env.project_dir, filename)
+            with open(full_filename, 'r') as f:
+                lines = f.readlines()
+            line_range = lines[start:stop]
+            return ((' ' * spaces) * indent).join(line_range)
+        ```
+
+        ````markdown
+        <!-- docs/*.md -->
+        Here's the CSS stylesheet for my the progess bar:
+
+        ```
+        {​{ include_file('docs/stylesheets/extra.css', start=23, stop=86, indent=4) }}
+        ```
+        ````
+
+    ---
+
+    Out
+    : <space>
+
+        Here's the CSS stylesheet for my the progess bar:
+
+        ```
+        {{ include_file('docs/stylesheets/extra.css', start=23, stop=86, indent=4) }}
+        ```
+
 === "Include glossary"
 
     In
@@ -85,59 +129,9 @@ Include contents of another file within the working page.
 
         HTML is the language of the web.
 
-=== "Include parts of file"
-
-    In
-    : <space>
-
-        ```python
-        # includes/main.py
-        import os
-
-        def define_env(env):
-            """
-            This is the hook for defining variables, macros and filters
-
-            - variables: the dictionary that contains the environment variables
-            - macro: a decorator function, to declare a macro.
-            """
-
-            @env.macro
-            def include_file(filename, start_line=0, end_line=None):
-                """
-                Include a file, optionally indicating start_line and end_line
-                (start counting from 0)
-                The path is relative to the top directory of the documentation
-                project.
-                """
-                full_filename = os.path.join(env.project_dir, filename)
-                with open(full_filename, 'r') as f:
-                    lines = f.readlines()
-                line_range = lines[start_line:end_line]
-                return '\n'.join(line_range)
-        ```
-
-        ````markdown
-        <!-- *.md -->
-        Here is the description:
-
-        ```
-        {​{ include_file('mkdocs.yml', 0, 4) }}
-        ```
-        ````
-
-    ---
-
-    Out
-    : <space>
-
-        !TODO
-
 ## References
 
 - [Mkdocs-Material ➤ Snippets](https://squidfunk.github.io/mkdocs-material-insiders/reference/code-blocks/#snippets)
 - [Pymdown-Extensions ➤ Snippets](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/)
 - [Mkdocs-Macros ➤ Advanced Usage ➤ Including snippets in pages](https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/#including-snippets-in-pages)
 - [Mkdocs-Macros ➤ Tips and tricks ➤ Include parts of files](https://mkdocs-macros-plugin.readthedocs.io/en/latest/tips/#i-would-like-to-include-a-text-file-from-line-a-to-line-b)
-
-{% include "includes/glossary.md" %}

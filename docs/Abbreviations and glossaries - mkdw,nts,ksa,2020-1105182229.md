@@ -14,7 +14,7 @@ You can create glossaries whose terms, defined with `*[term]: def`,  will, in th
     : <space>
 
         ```markdown
-        <!-- *.md -->
+        <!-- docs/*.md -->
         The HTML specification is maintained by the W3C.
 
         *[HTML]: Hyper Text Markup Language

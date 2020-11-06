@@ -26,7 +26,7 @@ In HTML, meta tags allow to provide additional metadata for a document, e.g. pag
 === "Basic"
 
     ```markdown
-    <!-- *.md -->
+    <!-- docs/*.md -->
     ---
     title: Lorem ipsum dolor sit amet
     description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
