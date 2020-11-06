@@ -62,6 +62,37 @@ theme:
     repo: fontawesome/brands/github
 
 
+extra:
+
+  # social links are rendered next to the copyright information as part of the footer (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-the-footer/#social-links)
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/akharrou
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/_akharrou
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/akharrou/
+
+    # - icon: fontawesome/brands/gitter
+    #   link: https://gitter.im/squidfunk/mkdocs-material
+    # - icon: fontawesome/brands/docker
+    #   link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    # - icon: fontawesome/brands/instagram
+    #   link: https://instagram.com/squidfunk
+    # - icon: fontawesome/brands/slack
+    #   link:
+    # - icon: fontawesome/brands/medium
+    #   link:
+    # - icon: fontawesome/brands/behance
+    #   link:
+
+  price: 12.50
+  company:
+      name: Acme
+      address: acme@labs.com
+      website: https://www.acme.com
+
+
 # css, javascript, and website customizations/extensions/overrides; (https://squidfunk.github.io/mkdocs-material-insiders/customization/#additional-css)
 extra_css:
   - stylesheets/extra.css
@@ -398,6 +429,8 @@ plugins:
   # - monorepo
 
 
+# -- >Content -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
   # allows redirections; (https://github.com/datarobot/mkdocs-redirects)
   - redirects:
         use_directory_urls: true
@@ -405,46 +438,6 @@ plugins:
             'Emphasis - mkdw,nts,ksa,2020-1101131959.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
             'Underline - mkdw,nts,ksa,2020-1101131945.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
             'Strike-through - mkdw,nts,ksa,2020-1101131644.md': 'Formatting - mkdw,nts,ksa,2020-1101125635.md'
-
-            # Examples:
-            # 'old.md': 'new.md'
-            # 'old/file.md': 'new/file.md'
-            # 'some_file.md': 'http://external.url.com/foobar'
-
-
-extra:
-
-  # social links are rendered next to the copyright information as part of the footer (https://squidfunk.github.io/mkdocs-material-insiders/setup/setting-up-the-footer/#social-links)
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/akharrou
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/_akharrou
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/akharrou/
-
-    # - icon: fontawesome/brands/gitter
-    #   link: https://gitter.im/squidfunk/mkdocs-material
-    # - icon: fontawesome/brands/docker
-    #   link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    # - icon: fontawesome/brands/instagram
-    #   link: https://instagram.com/squidfunk
-    # - icon: fontawesome/brands/slack
-    #   link:
-    # - icon: fontawesome/brands/medium
-    #   link:
-    # - icon: fontawesome/brands/behance
-    #   link:
-
-  price: 12.50
-  company:
-      name: Acme
-      address: acme@labs.com
-      website: https://www.acme.com
-
-
-
-# -- >Content -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 nav:
 
@@ -461,6 +454,7 @@ nav:
       - 'MKDW ➤ Callouts': Callouts - mkdw,nts,ksa,2020-1031114253.md
       - 'MKDW ➤ Tables': Tables - mkdw,nts,ksa,2020-1101095858.md
       - 'MKDW ➤ Footnotes': Footnotes - mkdw,nts,ksa,2020-1101104435.md
+      - 'MKDW ➤ Abbreviations and glossaries': Abbreviations and glossaries - mkdw,nts,ksa,2020-1105182229.md
       - 'MKDW ➤ Emojis and icons': Emojis and icons - mkdw,nts,ksa,2020-1101104824.md
       - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
       - 'MKDW ➤ Lists': Lists - mkdw,nts,ksa,2020-1101104845.md
@@ -470,9 +464,6 @@ nav:
       # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
       - 'MKDW ➤ Formatting': Formatting - mkdw,nts,ksa,2020-1101125635.md
       # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-      # - 'MKDW ➤ Emphasis': Emphasis - mkdw,nts,ksa,2020-1101131959.md
-      # - 'MKDW ➤ Underline': Underline - mkdw,nts,ksa,2020-1101131945.md
-      # - 'MKDW ➤ Strike-through': Strike-through - mkdw,nts,ksa,2020-1101131644.md
       - 'MKDW ➤ Special characters': Special characters - mkdw,nts,ksa,2020-1101131621.md
       - 'MKDW ➤ Superscript and subscript': Superscript and subscript - mkdw,nts,ksa,2020-1101104802.md
       - 'MKDW ➤ Highlight marks': Highlight marks - mkdw,nts,ksa,2020-1101115332.md

@@ -198,8 +198,6 @@ To extend the [[Mkdocs - mkdw,nts,ksa,2020-1101200211|Mkdocs]] [Material theme](
 - [Mkdocs-Material ➤ Changing the logo and icons](https://squidfunk.github.io/mkdocs-material-insiders/setup/changing-the-logo-and-icons/)
 - [Mkdocs ➤ Styling ➤ Using the theme `custom_dir`](https://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme-custom_dir)
 
-just partials test
-
-<!-- >Includes -->
-{% include 'abbreviations.md' %}
 <!-- Includes -->
+{% include 'glossary.md' %}
+<!-- >Includes -->

@@ -12,23 +12,6 @@ See [Markdown Guide :: Extended Syntax](https://www.markdownguide.org/extended-s
 
 See [PyMdown Extensions Documentation](https://facelessuser.github.io/pymdown-extensions/).
 
-### Abbreviations
-
-The HTML specification is maintained by the W3C.
-
---8<-- "includes/abbreviations.md"
-
-```markdown
-The HTML specification is maintained by the W3C.
-
---8<-- "includes/abbreviations.md"
-```
-
-```html
-<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification
-is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
-```
-
 ### Snippets
 
 Includes the entire contents of other files.
