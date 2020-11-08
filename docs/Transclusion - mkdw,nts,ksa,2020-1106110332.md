@@ -93,7 +93,7 @@ Include contents of another file within the working page.
 
         ````markdown
         <!-- docs/*.md -->
-        Here's the CSS stylesheet for my the progess bar:
+        Here's the CSS stylesheet for the progess bar:
 
         ```
         {​{ include_file('docs/stylesheets/extra.css', start=23, stop=86, indent=4) }}
@@ -105,7 +105,7 @@ Include contents of another file within the working page.
     Out
     : <space>
 
-        Here's the CSS stylesheet for my the progess bar:
+        Here's the CSS stylesheet for the progess bar:
 
         ```
         {{ include_file('docs/stylesheets/extra.css', start=23, stop=86, indent=4) }}
