@@ -367,16 +367,16 @@ plugins:
 
 
   # For full docs enumeration coverage: https://github.com/timvink/mkdocs-enumerate-headings-plugin
-  - enumerate-headings:
-      toc_depth: 2
-      strict: true
-  - add-number:
-      increment_topnav: true
-      increment_pages: false
-      order: 6
-      strict_mode: false
-      excludes:
-      includes:
+  # - enumerate-headings:
+  #     toc_depth: 2
+  #     strict: true
+  # - add-number:
+  #     increment_topnav: true
+  #     increment_pages: false
+  #     order: 6
+  #     strict_mode: false
+  #     excludes:
+  #     includes:
 
 
   # automatically number the headings (h1-h6) in each markdown page and the nav. This only affects your rendered HTML and does not affect the markdown files; (https://github.com/ignorantshr/mkdocs-add-number-plugin)
@@ -471,6 +471,7 @@ nav:
       - 'MKDW ➤ Math': Math - mkdw,nts,ksa,2020-1101104905.md
       - 'MKDW ➤ Tables': Tables - mkdw,nts,ksa,2020-1101095858.md
       - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
+      - 'MKDW ➤ Links': Links - mkdw,nts,ksa,2020-1108081611.md
       - 'MKDW ➤ Emojis and icons': Emojis and icons - mkdw,nts,ksa,2020-1101104824.md
       - 'MKDW ➤ Footnotes': Footnotes - mkdw,nts,ksa,2020-1101104435.md
       - 'MKDW ➤ Abbreviations and glossaries': Abbreviations and glossaries - mkdw,nts,ksa,2020-1105182229.md
