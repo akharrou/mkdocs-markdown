@@ -59,7 +59,7 @@ Quotes are supported with the `> quote` syntax.
         sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua.
 
-=== "Nesting"
+=== "Nested blockquotes"
 
     In
     : <space>
@@ -75,6 +75,29 @@ Quotes are supported with the `> quote` syntax.
     :   > Some quote.
         >> subquote
         >>> subsubquote
+
+=== "Nested elements"
+
+    In
+    :   <space>
+        ```
+        > ### The quarterly results look great!
+        >
+        > - Revenue was off the chart.
+        > - Profits were higher than ever.
+        >
+        >  *Everything* is going according to **plan**.
+        ```
+
+    ---
+
+    Out
+    :   > ### The quarterly results look great!
+        >
+        > - Revenue was off the chart.
+        > - Profits were higher than ever.
+        >
+        >  *Everything* is going according to **plan**.
 
 ## References
 
