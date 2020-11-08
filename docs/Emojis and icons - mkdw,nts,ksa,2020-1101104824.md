@@ -29,13 +29,6 @@ Inline emojis are supported with the `:emoji:` syntax.
     In
     : <space>
 
-        ```markdown
-        - :fontawesome-regular-laugh-wink:
-        :fontawesome-brands-twitter:{: .twitter }
-        :octicons-heart-fill-24:{: .heart }
-        :bootstrap-emoji-sunglasses:{: .heart }
-        ```
-
         ```css
         /* docs/stylesheets/extra.css */
         .twitter {
@@ -61,6 +54,14 @@ Inline emojis are supported with the `:emoji:` syntax.
         # mkdocs.yml
         extra_css:
           - stylesheets/extra.css
+        ```
+
+        ```markdown
+        <!-- docs/*.md -->
+        - :fontawesome-regular-laugh-wink:
+        :fontawesome-brands-twitter:{: .twitter }
+        :octicons-heart-fill-24:{: .heart }
+        :bootstrap-emoji-sunglasses:{: .heart }
         ```
 
     ---

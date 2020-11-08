@@ -45,7 +45,7 @@ theme:
   palette:
     - scheme: default # OR `slate` (dark mode)
       primary: black
-      accent: deep purple
+      accent: deep blue
 
 
   # change the font of the site
@@ -470,8 +470,9 @@ nav:
       - 'MKDW ➤ Code': Code - mkdw,nts,ksa,2020-1106142858.md
       - 'MKDW ➤ Math': Math - mkdw,nts,ksa,2020-1101104905.md
       - 'MKDW ➤ Tables': Tables - mkdw,nts,ksa,2020-1101095858.md
-      - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
       - 'MKDW ➤ Links': Links - mkdw,nts,ksa,2020-1108081611.md
+      - 'MKDW ➤ Images': Images - mkdw,nts,ksa,2020-1101104836.md
+      - 'MKDW ➤ Blockquotes': Blockquotes - mkdw,nts,ksa,2020-1108085601.md
       - 'MKDW ➤ Emojis and icons': Emojis and icons - mkdw,nts,ksa,2020-1101104824.md
       - 'MKDW ➤ Footnotes': Footnotes - mkdw,nts,ksa,2020-1101104435.md
       - 'MKDW ➤ Abbreviations and glossaries': Abbreviations and glossaries - mkdw,nts,ksa,2020-1105182229.md
@@ -480,9 +481,9 @@ nav:
       - 'MKDW ➤ Transclusion': Transclusion - mkdw,nts,ksa,2020-1106110332.md
       - 'MKDW ➤ Keyboard keys': 'Keyboard keys - mkdw,nts,ksa,2020-1106100206.md'
       - 'MKDW ➤ Buttons': 'Buttons - mkdw,nts,ksa,2020-1106101115.md'
+      - 'MKDW ➤ Diagrams': Diagrams - mkdw,nts,ksa,2020-1106222521.md
       - 'MKDW ➤ Meta tags': Meta tags - mkdw,nts,ksa,2020-1101104945.md
       - 'MKDW ➤ Macros and variables': Macros and variables - mkdw,nts,ksa,2020-1101105007.md
-      - 'MKDW ➤ Diagrams': Diagrams - mkdw,nts,ksa,2020-1106222521.md
       # -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
       - 'MKDW ➤ Mkdocs': Mkdocs - mkdw,nts,ksa,2020-1101200211.md
       - 'MKDW ➤ Extending mkdocs-material': 'Extending mkdocs-material - mkdw,nts,ksa,2020-1101214900.md'
