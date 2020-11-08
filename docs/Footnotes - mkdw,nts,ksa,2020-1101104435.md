@@ -4,6 +4,19 @@
 
 Footnotes are supported with the `[^1]` ... `[^1]: footnote content` syntax.
 
+??? Mkdocs Configurations
+
+    ```bash
+    pip install mkdocs-material
+    pip install mkdocs-material-extensions
+    ```
+
+    ```yaml
+    # mkdocs.yml
+    markdown_extensions:
+    - footnotes
+    ```
+
 ## Examples
 
 === "Adding footnotes"

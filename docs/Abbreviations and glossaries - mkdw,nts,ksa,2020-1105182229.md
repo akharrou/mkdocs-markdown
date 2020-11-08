@@ -6,6 +6,20 @@ You can create glossaries whose terms, defined with `*[term]: def`,  will, in th
 
 ![[abbreviations.jpg]]
 
+
+??? Mkdocs Configurations
+
+    ```bash
+    pip install mkdocs-material
+    pip install mkdocs-material-extensions
+    ```
+
+    ```yaml
+    # mkdocs.yml
+    markdown_extensions:
+        - abbr
+    ```
+
 ## Examples
 
 === "Local glossary"

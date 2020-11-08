@@ -9,7 +9,10 @@ There are few types of lists:
 
 ??? info "Mkdocs configurations"
 
-    Enables definition and task lists.
+    ```bash
+    pip install mkdocs-material
+    pip install mkdocs-material-extensions
+    ```
 
     ```yaml
     # mkdocs.yml

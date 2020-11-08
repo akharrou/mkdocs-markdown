@@ -4,6 +4,24 @@
 
 Inline emojis are supported with the `:emoji:` syntax.
 
+??? Mkdocs Configurations
+
+    ```bash
+    pip install mkdocs-material
+    pip install mkdocs-material-extensions
+    ```
+
+    ```yaml
+    # mkdocs.yml
+    markdown_extensions:
+        - pymdownx.emoji:
+            emoji_index: !!python/name:materialx.emoji.twemoji
+            emoji_generator: !!python/name:materialx.emoji.to_svg
+            options:
+                custom_icons:
+                - overrides/.icons
+    ```
+
 ## Examples
 
 === "Emojis"
