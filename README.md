@@ -1,6 +1,6 @@
 # mkdocs-markdown
 
-Markdown notes hosted on a website. It's live ! @<https://akharrou.github.io/mkdocs-markdown>
+Markdown notes hosted on a website, made with [MkDocs](https://www.mkdocs.org/), and the [MkDocs-Material Theme](https://squidfunk.github.io/mkdocs-material-insiders/). It's live ! @<https://akharrou.github.io/mkdocs-markdown>
 
 ![asset-6](docs/_assets/website%20docs%20preview%20-%20mkdw,imgs,ksa,2020-1106225856.jpg)
 ![asset-7](docs/_assets/website%20docs%20preview%202%20-%20mkdw,imgs,ksa,2020-1106225947.jpg)
