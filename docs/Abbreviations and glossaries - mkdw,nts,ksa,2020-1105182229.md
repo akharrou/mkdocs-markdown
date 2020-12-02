@@ -6,7 +6,6 @@ You can create glossaries whose terms, defined with `*[term]: def`,  will, in th
 
 ![[abbreviations.jpg]]
 
-
 ??? Mkdocs Configurations
 
     ```bash

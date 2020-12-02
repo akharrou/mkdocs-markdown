@@ -14,7 +14,7 @@ Footnotes are supported with the `[^1]` ... `[^1]: footnote content` syntax.
     ```yaml
     # mkdocs.yml
     markdown_extensions:
-    - footnotes
+        - footnotes
     ```
 
 ## Examples
@@ -26,8 +26,6 @@ Footnotes are supported with the `[^1]` ... `[^1]: footnote content` syntax.
 
         ```
         Lorem ipsum.[^1] More text incoming.[^2]
-
-        ...
 
         [^1]: first footnote content
         [^2]: second footnote content ... <br> <br> more content
